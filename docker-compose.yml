@@ -17,6 +17,8 @@ services:
       - '.:/onebitbot'
     volumes_from:
     - box
+    environment:
+      - LANG=C.UTF-8
  
   box:
     image: busybox
