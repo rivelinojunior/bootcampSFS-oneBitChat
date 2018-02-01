@@ -14,7 +14,7 @@ describe FaqModule::RemoveService do
       end
 
       it "message remove Faq " do
-        expect(response).to match("Deletado com sucesso")
+        expect(@response).to match("Deletado com sucesso")
       end
 
       it "remove Faq from database" do
