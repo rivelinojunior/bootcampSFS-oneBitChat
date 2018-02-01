@@ -3,6 +3,7 @@ gem 'sinatra'
 gem "activerecord"
 gem "sinatra-activerecord"
 gem 'pg', '~> 0.18'
+gem 'pg_search'
 gem 'rake'
 
 group :development do
