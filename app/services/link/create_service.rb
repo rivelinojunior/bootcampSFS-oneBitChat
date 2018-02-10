@@ -13,7 +13,7 @@ module LinkModule
         "Criado com sucesso"
       rescue => error
         message = error.message.split(":")[1] if error.message
-        message = message.slice 1, message.size if message.first === " "
+        message = message.strip
         message ||= "Problemas na criação"
       end
     end
