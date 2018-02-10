@@ -40,7 +40,7 @@ describe LinkModule::CreateService do
           "url-original" => @link.url 
         })
         response = createService.call()
-        expect(response).to match "Assunto Obrigatório"
+        expect(response).to match "Subject Obrigatório"
       end
 
       it 'Only without url params' do
@@ -51,7 +51,7 @@ describe LinkModule::CreateService do
         })
       
         response = createService.call()
-        expect(response).to match "URL Obrigatória"
+        expect(response).to match "Url Obrigatória"
       end
     end
   end
