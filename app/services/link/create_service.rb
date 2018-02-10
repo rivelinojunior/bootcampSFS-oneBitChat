@@ -12,8 +12,7 @@ module LinkModule
         Link.create! subject: @subject, url: @url, company: @company
         "Criado com sucesso"
       rescue => error
-        message = error.message.split(":")[1] if error.message
-        message = message.slice 1, message.size if message.first === " "
+        message = error.message.split(":").last.strip if error.message
         message ||= "Problemas na criação"
       end
     end
