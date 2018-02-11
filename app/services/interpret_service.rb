@@ -9,6 +9,12 @@ class InterpretService
       FaqModule::RemoveService.new(params).call()
     when "help"
       HelpService.call()
+    when "link-create"
+      LinkModule::CreateService.new(params).call()
+    when "link-remove"
+      LinkModule::RemoveService.new(params).call()
+    when "link-list", "link-search"
+      LinkModule::ListService.new(params).call()
     else
       "Não compreendi o seu desejo"
     end
