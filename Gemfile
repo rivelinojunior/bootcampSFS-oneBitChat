@@ -10,11 +10,6 @@ group :development do
  gem "tux"
 end
 
-group :development, :test do
-  gem 'byebug', platform: :mri
-  gem 'pry-byebug'
-end
-
 group :test do
   gem "rack-test", require: "rack/test"
   gem "rspec"

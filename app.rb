@@ -1,6 +1,5 @@
 require 'json'
 require 'sinatra'
-require 'pry'
 require 'sinatra/activerecord'
 
 require './config/database'
