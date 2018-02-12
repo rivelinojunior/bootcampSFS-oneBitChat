@@ -2,6 +2,8 @@
 
 A ChatBot with functions of FAQ for that the users can to access the list of questions and answers.
 
+![Screenshot](public/screenshot.jpeg)
+
 ## Purpose
 
 This project has with purpose the learning new skills. The project was developed following the lessons of bootcamp in the [OneBitCode](onebitcode.com), with exception of some features that was developed for to conclude the challenges proposed. Follow the features developed for me (challenges):  
